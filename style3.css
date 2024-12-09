@@ -1,0 +1,155 @@
+body {
+    background-color: var(--bg-color);
+    background-image: url('back.jpg'); /* Update to use the uploaded image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: var(--text-color);
+    line-height: 1.6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+    display: flex;
+	margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 100px;
+	height: 100px;
+	border-radius: 80%;
+	margin-left: 30px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 50px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+	color: white;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;  
+    gap: 50px;            
+    justify-content: center; 
+	margin-bottom: 20px;
+	margin-top: 25px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.logo {
+    height: 50px;   
+    display: block; 
+	padding: 0.1px;
+	margin-bottom: 10%;
+	width: 30px;
+	height: 30px;
+}
+
+
+.logo-button {
+    background: transparent;  
+	width: 30px;
+    border: none;             
+    padding: 0;               
+    cursor: pointer;         
+    display: inline-flex;     
+    align-items: center;  
+	margin-bottom: 20px;
+}
+
+
+
+.container-sam{
+	 text-align: center;
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+
+
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.image-container img {
+  width: 500px;
+  height: 500px;
+  border: 50px  solid white; 
+  border-radius: 50px; 
+
+}
+
+.caption, .description {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  font-size: 1.0em;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.description {
+  top: auto;
+  bottom: 0;
+}
+
+.image-container:hover .caption,
+.image-container:hover .description {
+  opacity: 1;
+}
+
+
+footer {
+    background-color: #AED6F1;
+    padding: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom: -100px;
+    text-align: center;
+	font-size: 0.8em;
+}
